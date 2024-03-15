@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="navbar-links-container">
         <a href="">Home</a>
         <a href="">Calculate</a>
-        <a href="">Products</a>
+        <a href="/product">Products</a>
         
         
         <button className="primary-button">Login/SignUp</button>

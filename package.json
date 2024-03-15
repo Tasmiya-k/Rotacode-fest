@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mui/styles": "^5.15.13",
     "chart.js": "^4.4.2",
     "react-icons": "^5.0.1"
   }

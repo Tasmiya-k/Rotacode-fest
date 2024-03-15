@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import UserProfile from "./pages/UserProfilePage";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
+import Product from "./pages/Product";
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +39,9 @@ function App() {
     {
       path: "/userprofile",
       element: <UserProfile />,
+    },{
+      path: "/product",
+      element: <Product />,
     },
   ]);
   return (
