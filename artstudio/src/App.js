@@ -9,6 +9,7 @@ import UserProfile from "./pages/UserProfilePage";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 import Product from "./pages/Product";
+import Calculator from "./pages/Calculator"
 
 function App() {
   const router = createBrowserRouter([
@@ -43,6 +44,10 @@ function App() {
       path: "/product",
       element: <Product />,
     },
+    {
+      path: "/calculator",
+      element: <Calculator/>
+    }
   ]);
   return (
     <div className="App">

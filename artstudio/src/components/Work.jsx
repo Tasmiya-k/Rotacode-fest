@@ -4,8 +4,14 @@ import PickMeals from "../Assets/pick-meals-image.png";
 import ChooseMeals from "../Assets/choose-image.png";
 import DeliveryMeals from "../Assets/delivery-image.png";
 import { FiArrowRight } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const Work = () => {
+  const navigate = useNavigate();
+
+  function CalcGo() {
+    navigate("/calculator");
+  }
   const workInfoData = [
     {
       image: PickMeals,
@@ -26,19 +32,17 @@ const Work = () => {
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Calculate Carbon Footprints</p> 
+        <p className="primary-subheading">Calculate Carbon Footprints</p>
         <h1 className="primary-heading">Calculate Your Carbon</h1>
         <h1 className="primary-heading">Footprints</h1>
         <p className="primary-text">
-        Explore our carbon footprint calculator to understand your impact, and discover practical tips and resources to lighten your ecological load. 
+          Explore our carbon footprint calculator to understand your impact, and
+          discover practical tips and resources to lighten your ecological load.
         </p>
-        <button className="secondary-button">
-            Calculate Now <FiArrowRight />{" "}
+        <button className="secondary-button" onClick={CalcGo}>
+          Calculate Now <FiArrowRight />{" "}
         </button>
       </div>
-      
-
-      
     </div>
   );
 };
