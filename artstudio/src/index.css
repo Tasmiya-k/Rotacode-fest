@@ -12,7 +12,7 @@ body {
 .navbar {
   display: flex;
   height: 100px;
-  background-color: #fde8f8;
+  /* background-color: #fde8f8; */
   align-items: center;
   justify-content: space-between;
 }
@@ -60,7 +60,7 @@ ul li .nav-link {
 
 .nav-link.active,
 .nav-link:hover {
-  background-color: #fff;
+  background-color: #76ca5d;
   transition: 0.5s;
 }
 

@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import UserProfile from "./pages/UserProfilePage";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 
@@ -33,6 +34,10 @@ function App() {
     {
       path: "/register",
       element: <Register />,
+    },
+    {
+      path: "/userprofile",
+      element: <UserProfile />,
     },
   ]);
   return (

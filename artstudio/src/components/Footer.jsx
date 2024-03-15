@@ -1,21 +1,47 @@
-export default function Footer() {
+import React from "react";
+import "./homePage.css";
+import Logo from "../Assets/Logo.svg";
+import { BsTwitter } from "react-icons/bs";
+import { SiLinkedin } from "react-icons/si";
+import { BsYoutube } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+
+const Footer = () => {
   return (
-    <footer id="footer">
-      <div className="leftfooter">
-        <h4>ownload our App</h4>
-        <p>download our app for both playstore and ios</p>
+    <div className="footer-wrapper">
+      <div className="footer-section-one">
+        <div className="footer-logo-container">
+          <img src={Logo} alt="" />
+        </div>
+        <div className="footer-icons">
+          <BsTwitter />
+          <SiLinkedin />
+          <BsYoutube />
+          <FaFacebookF />
+        </div>
       </div>
-      <div className="midfooter">
-        <h1>6PP</h1>
-        <p>High Quality is our first priority</p>
-        <p>Copyrights 2023 &copy; Tasmiya K Art Studio</p>
+      <div className="footer-section-two">
+        <div className="footer-section-columns">
+          <span>Qualtiy</span>
+          <span>Help</span>
+          <span>Share</span>
+          <span>Carrers</span>
+          <span>Testimonials</span>
+          <span>Work</span>
+        </div>
+        <div className="footer-section-columns">
+          <span>244-5333-7783</span>
+          <span>hello@food.com</span>
+          <span>press@food.com</span>
+          <span>contact@food.com</span>
+        </div>
+        <div className="footer-section-columns">
+          <span>Terms & Conditions</span>
+          <span>Privacy Policy</span>
+        </div>
       </div>
-      <div className="rightfooter">
-        <h4>Follow us</h4>
-        <a href="">Instagram</a>
-        <a href="">Youtube</a>
-        <a href="">Facebook</a>
-      </div>
-    </footer>
+    </div>
   );
-}
+};
+
+export default Footer;
